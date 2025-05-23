@@ -54,7 +54,7 @@
                 9:00 - 9:30 am
             </td>
             <td class="title">
-                Talk 8
+                Safety and Robustness of Large Models
             </td>
         </tr>
         <tr>
@@ -62,7 +62,20 @@
                 <a href="https://www.cse.msu.edu/~nandakum/"><b>Karthik Nandakumar</b></a>, (Michigan State University / MBZUAI)
             </td>
         </tr>
+             <tr>
+                 <td class="abstract">
+                     
+                    <b>Abstract:</b> Foundation models are a valuable tool for solving tough real-world problems. 
+                     However, several safety issues need to be addressed before widespread deployment of such models. In this talk, we briefly review these threats and identify key unsolved challenges. First, we will focus on adversarial attacks and defense mechanisms. Next, we consider the challenges in aligning large generative models with human values, which is critical to mitigate the risk of unintended consequences. At the same time, care must be taken to ensure that prevalent human biases do not creep into these models. 
+                     Finally, we will discuss how foundation models can be collaboratively adapted for sensitive downstream tasks in a double-blind manner, which preserves both model and data confidentiality.
 
+                     
+                    <hr style="border: 0; height: 1px; background-color: #ddd; margin: 16px 0;">
+
+                    <b>Bio:</b> Karthik Nandakumar is an Associate Professor in the Department of Computer Science and Engineering at Michigan State University (MSU) and an Affiliated Associate Professor in the Computer Vision department at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). Earlier, he was a Research Staff Member at IBM Research – Singapore and a Scientist at Institute for Infocomm Research, A*STAR, Singapore. His primary research interests include trustworthy machine learning, computer vision, biometric recognition, and applied cryptography. 
+                     He was a Senior Area Editor of IEEE Transactions on Information Forensics and Security (T-IFS) (2019-23) and a Distinguished Industry Speaker for the IEEE Signal Processing Society (2020-21).
+                </td>        
+            </tr>
     </tbody></table>
 
          <table id="Contributed talk 9">
@@ -71,7 +84,7 @@
                 9:30 - 10:00 am
             </td>
             <td class="title">
-                Talk 9
+                How Can I Publish My LLM Benchmark Without Giving the True Answers Away?
             </td>
         </tr>
         <tr>
@@ -79,7 +92,20 @@
                 <a href="https://takashiishida.github.io/"><b>Takashi Ishida</b></a>, (The University of Tokyo)
             </td>
         </tr>
+             <tr>
+                 <td class="abstract">
+                     
+                    <b>Abstract:</b> Publishing a large language model (LLM) benchmark on the Internet risks contaminating future LLMs: the benchmark may be unintentionally (or intentionally) used to train or select a model. 
+                     A common mitigation is to keep the benchmark private and let participants submit their models or predictions to the organizers. 
+                     However, this strategy will require trust in a single organization and still permits test-set overfitting through repeated queries. To overcome this issue, we propose a way to publish benchmarks without completely disclosing the ground-truth answers to the questions, while still maintaining the ability to openly evaluate LLMs. Our main idea is to inject randomness to the answers by preparing several logically correct answers, and only include one of them as the solution in the benchmark. This reduces the best possible accuracy, i.e., Bayes accuracy, of the benchmark. Not only is this helpful to keep us from disclosing the ground truth, but this approach also offers a test for detecting data contamination. In principle, even fully capable models should not surpass the Bayes accuracy. If a model surpasses this ceiling despite this expectation, this is a strong signal of data contamination. 
+                     We present experimental evidence that our method can detect data contamination accurately on a wide range of benchmarks, models, and training methodologies.
+                     
+                    <hr style="border: 0; height: 1px; background-color: #ddd; margin: 16px 0;">
 
+                    <b>Bio:</b> Takashi Ishida is a Research Scientist at RIKEN AIP, an Associate Professor at The University of Tokyo, and a part-time Research Scientist at Sakana AI. At UTokyo, he is co-running the Machine Learning and Statistical Data Analysis Lab. He earned his PhD from The University of Tokyo in 2021, advised by Prof. Masashi Sugiyama. 
+                     He is interested in data-centric approaches (such as Bayes error estimation, LLM benchmarking, and test-set overfitting) and weakly supervised learning (such as learning from complementary labels).
+                </td>        
+            </tr>
     </tbody></table>
 
          <table id="Contributed talk 10">
@@ -88,7 +114,7 @@
                 10:00 - 10:30 am
             </td>
             <td class="title">
-                Talk 10
+                Search-Based Correction for Reasoning Chains of Language Models
             </td>
         </tr>
         <tr>
@@ -96,7 +122,19 @@
                 <a href="https://minsuukim.github.io/"><b>Minsu Kim</b></a>, (Mila - Quebec AI Institute)
             </td>
         </tr>
+             <tr>
+                 <td class="abstract">
+                     
+                    <b>Abstract:</b> In this seminar, I present my recent work on enhancing the reliability of Chain-of-Thought (CoT) reasoning in language models (LMs). 
+                     We interpret CoT reasoning as hierarchical latent variable inference, decomposing reasoning into high-level statements and low-level boolean variables indicating their veracity. We introduce the Search Corrector, a discrete search algorithm leveraging the LM’s joint likelihood as a proxy reward to efficiently infer veracity. The efficiency of Search Corrector arises from our hierarchical structure, where statements remain fixed, restricting the search space to a combinatorial boolean space rather than the entire natural language space. Search Corrector provides supervised signals to train an Amortized Corrector, which directly converts incorrect statements into corrected ones, significantly boosting reasoning accuracy via zero-shot correction. 
+                     Our approach consistently detects reasoning errors and substantially improves final answer accuracy across logical (ProntoQA) and mathematical (GSM8K) benchmarks.
+                     
+                    <hr style="border: 0; height: 1px; background-color: #ddd; margin: 16px 0;">
 
+                    <b>Bio:</b> Minsu Kim is a postdoctoral fellow at Mila - Quebec AI Institute and KAIST, advised by Prof. Yoshua Bengio, Prof. Sungjin Ahn, and Prof. Sungsoo Ahn. He received his Ph.D. from KAIST for his research at the intersection of combinatorial optimization and deep learning, earning KAIST's Presidential Best Dissertation Award. 
+                     His current research focuses on integrating search-based methods inspired by metaheuristics and off-policy reinforcement learning (e.g., GFlowNets) to efficiently control large foundation models.
+                </td>        
+            </tr>
     </tbody></table>
     
      <table>
@@ -117,7 +155,7 @@
                 11:00 - 11:30 am
             </td>
             <td class="title">
-                Talk 11
+                Universal In-context Approximation
             </td>
         </tr>
         <tr>
@@ -125,7 +163,19 @@
                 <a href="https://p-petrov.com/"><b>Aleksandar Petrov</b></a>, (University of Oxford)
             </td>
         </tr>
+             <tr>
+                 <td class="abstract">
+                     
+                    <b>Abstract:</b> Where once new tasks required new datasets and model training, today, increasingly, we just write a prompt. This shift raised a fundamental question: how far can prompting alone take us? 
+                     In this talk, I explore the formal limits and capabilities of prompting and in-context learning. Classical universal approximation considers whether a model class can approximate arbitrary functions via selecting appropriate parameters. We instead ask: can a fixed model approximate arbitrary functions by varying only the prompt? This leads us to define and study the universal in-context approximation abilities of language models. I’ll show that transformers with a single attention head can approximate any smooth function on the hypersphere via prompting alone, and how this extends to general sequence-to-sequence tasks. 
+                     Surprisingly, similar results hold for recurrent models, including linear RNNs and modern state space models. These findings reveal that prompting is not just a user interface—it’s a computational mechanism with representational power on par with training, challenging earlier intuitions about its limitations and opening new questions about what models can learn in-context, and raising new concerns about their safety and security.
+                     
+                    <hr style="border: 0; height: 1px; background-color: #ddd; margin: 16px 0;">
 
+                    <b>Bio:</b> I am a final-year PhD student at the University of Oxford, supervised by Prof. Philip Torr and Dr. Adel Bibi. My research focuses on the fundamental properties of deep learning models and how they can be harnessed to build more reliable, safe and performant machine learning systems. My recent works focused on long context compression, watermark coexistence, universal in-context approximation, multilingual tokenization fairness and robustness. 
+                     Prior to Oxford, I completed my MSc at ETH Zürich, where I worked with Emilio Frazzoli’s group on robotics and applied category theory. I also previously did research internships at Motional, Adobe and Google DeepMind.
+                </td>        
+            </tr>
     </tbody></table>
 
              <table id="Contributed talk 12">
@@ -134,7 +184,7 @@
                 11:30 - 12:00 pm
             </td>
             <td class="title">
-                Talk 12
+                Scalable Safety
             </td>
         </tr>
         <tr>
@@ -142,7 +192,16 @@
                 <a href="https://kiddyboots216.github.io/"><b>Ashwinee Panda</b></a>, (Princeton University)
             </td>
         </tr>
+             <tr>
+                 <td class="abstract">
+                     
+                    <b>Abstract:</b> We consider a range of failure settings where existing safety mechanisms are insufficient. We examine the proficiency of existing models for safety oversight.
+                     
+                    <hr style="border: 0; height: 1px; background-color: #ddd; margin: 16px 0;">
 
+                    <b>Bio:</b> Ashwinee is a postdoctoral fellow at UMD working with Tom Goldstein on LLMs. 
+                </td>        
+            </tr>
     </tbody></table>
 
 
@@ -159,94 +218,10 @@
     </tbody></table>
 
 
-
-        <table id="Student presentation and mentoring 1">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                14:00 - 14:15 pm 
-            </td>
-            <td class="title">
-                Student talk 1 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Mentor: <a href="https://nouhadziri.github.io/"><b>Nouha Dziri</b></a>; <a href="https://haolun-wu.github.io/"><b>Haolun Wu</b></a>
-            </td>
-        </tr>
-       
-    </tbody></table>
-
-    
-    <table id="Student presentation and mentoring 2">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-               14:15 - 14:30 pm
-            </td>
-            <td class="title">
-                Student talk 2
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Mentor: <a href="https://xiaocw11.github.io/"><b>Chaowei Xiao</b></a>; <a href="https://kiddyboots216.github.io/"><b>Ashwinee Panda</b></a>
-            </td>
-        </tr>
-       
-    </tbody></table>
-
-    
-        <table id="Student presentation and mentoring 3">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                14:30 - 14:45 pm 
-            </td>
-            <td class="title">
-                Student talk 3
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Mentor: <a href="https://takashiishida.github.io/"><b>Takashi Ishida</b></a>; <a href="https://minsuukim.github.io/"><b>Minsu Kim</b></a>
-            </td>
-        </tr>
-       
-    </tbody></table>
-
-
-    <table id="Student presentation and mentoring 4">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                14:45 - 15:00 pm 
-            </td>
-            <td class="title">
-                Student talk 4
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Mentor: <a href="https://p-petrov.com/"><b>Aleksandar Petrov</b></a>; <a href="https://nouhadziri.github.io/"><b>Nouha Dziri</b></a>
-            </td>
-        </tr>
-       
-    </tbody></table>
-
-         <table>
-        <tbody><tr>
-            <td class="date" rowspan="2">
-                15:00 - 15:30 pm
-            </td>
-            <td class="title-special">
-                Coffee break
-            </td>
-        </tr>
-
-    </tbody></table>
-
     <table id="Panel">
         <tbody><tr>
             <td class="date" rowspan="3">
-                15:30 - 16:45 pm
+                14:00 - 14:30 pm
             </td>
             <td class="title">
                 Panel
@@ -263,7 +238,7 @@
     <table id="Closing remarks">
         <tbody><tr class="speaker">
             <td class="date" rowspan="3">
-                16:45 - 17:00 pm
+                14:30 - 15:00 pm
             </td>
             <td class="title-special">
                 Closing remarks
